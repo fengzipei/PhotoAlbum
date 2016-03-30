@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>Album.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>/dispatcherServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>signupServlet</servlet-name>
+        <servlet-class>Album.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signupServlet</servlet-name>
+        <url-pattern>/signupServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>uploadServlet</servlet-name>
+        <servlet-class>Album.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadServlet</servlet-name>
+        <url-pattern>/uploadServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteFileServlet</servlet-name>
+        <servlet-class>Album.DeleteFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteFileServlet</servlet-name>
+        <url-pattern>/deleteFileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createServlet</servlet-name>
+        <servlet-class>Album.CreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createServlet</servlet-name>
+        <url-pattern>/createServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteDirecoryServlet</servlet-name>
+        <servlet-class>Album.DeleteDirectoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteDirecoryServlet</servlet-name>
+        <url-pattern>/deleteDirecoryServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>changeDirectoryNameServlet</servlet-name>
+        <servlet-class>Album.ChangeDirectoryNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changeDirectoryNameServlet</servlet-name>
+        <url-pattern>/changeDirectoryNameServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>enterAlbumServlet</servlet-name>
+        <servlet-class>Album.EnterAlbumServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>enterAlbumServlet</servlet-name>
+        <url-pattern>/enterAlbumServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>jumpServlet</servlet-name>
+        <servlet-class>Album.JumpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jumpServlet</servlet-name>
+        <url-pattern>/jumpServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>changeFileNameServlet</servlet-name>
+        <servlet-class>Album.ChangeFileNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changeFileNameServlet</servlet-name>
+        <url-pattern>/changeFileNameServlet</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
